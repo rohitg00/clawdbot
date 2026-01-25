@@ -1,0 +1,15 @@
+{
+  "name": "@clawdbot/skillkit",
+  "version": "2026.1.25",
+  "type": "module",
+  "description": "SkillKit integration plugin for cross-agent skill management",
+  "clawdbot": {
+    "extensions": ["./index.ts"]
+  },
+  "dependencies": {
+    "skillkit": "^1.6.0"
+  },
+  "peerDependencies": {
+    "clawdbot": "*"
+  }
+}

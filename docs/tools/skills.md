@@ -64,6 +64,28 @@ By default, `clawdhub` installs into `./skills` under your current working
 directory (or falls back to the configured Clawdbot workspace). Clawdbot picks
 that up as `<workspace>/skills` on the next session.
 
+## SkillKit (cross-agent skills)
+
+[SkillKit](https://github.com/rohitg00/skillkit) is a universal CLI for managing skills across 17 AI coding agents. Use it when you need to:
+
+- Share skills between Clawdbot and other agents (Claude Code, Cursor, Codex, etc.)
+- Translate skills from one agent format to another
+- Get project-aware skill recommendations
+- Manage skills across a team using different agents
+
+Common flows:
+
+- Translate a Claude Code skill to Clawdbot format:
+  - `skillkit translate ~/.claude/skills/my-skill --to clawdbot`
+- Install a skill for multiple agents:
+  - `skillkit install anthropics/skills --agent clawdbot,cursor`
+- Get recommendations for your project:
+  - `skillkit recommend`
+
+SkillKit complements ClawdHub: ClawdHub is Clawdbot's native registry, while SkillKit provides cross-agent portability.
+
+Full guide: [SkillKit](/tools/skillkit).
+
 ## Format (AgentSkills + Pi-compatible)
 
 `SKILL.md` must include at least:

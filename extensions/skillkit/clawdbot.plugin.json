@@ -1,0 +1,23 @@
+{
+  "id": "skillkit",
+  "name": "SkillKit",
+  "description": "Cross-agent skill management via SkillKit - install, translate, and sync skills across 17 AI coding agents",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "defaultAgent": {
+        "type": "string",
+        "description": "Default target agent for operations (e.g., clawdbot, claude-code, cursor)"
+      },
+      "autoSync": {
+        "type": "boolean",
+        "description": "Auto-sync skills after install"
+      },
+      "skillsDir": {
+        "type": "string",
+        "description": "Custom directory for storing skills (defaults to ~/.clawdbot/skills/)"
+      }
+    }
+  }
+}
